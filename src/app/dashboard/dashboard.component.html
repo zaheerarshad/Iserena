@@ -1,0 +1,31 @@
+<div class="container mt-3">
+    <h2>Product Form</h2>
+    <form [formGroup]="productform" class="frmproduct">
+        <div class="col-md-6 mt-3" hidden="true">
+            <label for="email">Product Name:</label>
+            <input type="text" class="form-control" formControlName="id" id="productname" placeholder="Enter Product Name" name="productname">
+        </div>  
+      <div class="col-md-6 mt-3">
+        <label for="email">Product Name:</label>
+        <input type="text" class="form-control" formControlName="productname" id="productname" placeholder="Enter Product Name" name="productname">
+      </div>
+      <div class="col-md-6 mt-3">
+        <label for="pwd">Product Description:</label>
+        <input type="text" class="form-control" formControlName="productdiscription" id="productdiscription" placeholder="Enter password" name="productdiscription">
+      </div>
+      <!-- <div class="col-md-6 mb-3">
+        <label for="comment">Comments:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div> -->
+      <div class="col-md-6 mt-3">
+        <button type="button" class="btn btn-primary" (click)="SaveData()">Submit</button>
+      </div>
+      
+      <br>
+    </form>
+  </div>
